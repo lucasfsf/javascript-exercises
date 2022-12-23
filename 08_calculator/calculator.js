@@ -21,8 +21,11 @@ const power = function(number, power) {
   return number * arguments.callee(number, power-1);
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	if (number === 1 || number === 0) {
+    return 1;
+  }
+  return number * arguments.callee(number - 1);
 };
 
 // Do not edit below this line
