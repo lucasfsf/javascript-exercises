@@ -3,7 +3,7 @@ const add = function(x, y) {
 };
 
 const subtract = function(x , y) {
-	
+	return x - y;
 };
 
 const sum = function() {
