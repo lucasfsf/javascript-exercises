@@ -14,8 +14,11 @@ const multiply = function(array) {
   return array.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
 };
 
-const power = function() {
-	
+const power = function(number, power) {
+  if (power == 1) {
+    return number;
+  }
+  return number * arguments.callee(number, power-1);
 };
 
 const factorial = function() {
